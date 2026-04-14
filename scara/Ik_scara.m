@@ -12,7 +12,7 @@ yw = py - a3*sin(phi);
 
 c2 = (xw^2 + yw^2 - a1^2 - a2^2)/ (2 * a1*a2);
 if c2 <-1 || c2 >1
-    error('Tọa độ [%.2f, %.2f, %.2f] ngoài tầm với!', px, py, pz);
+    error('Tọa độ [%.2f, %.2f, %.2f] ngoài tầm ', px, py, pz);
 end
 
 s2 = sqrt(1 - c2^2);

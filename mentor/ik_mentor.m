@@ -1,4 +1,4 @@
-function [q_Up, q_Down] = ikine_Mentor(Px, Py, Pz, phi_pitch_deg, theta5_roll_deg)
+function [q_Up, q_Down] = ik_mentor(Px, Py, Pz, phi_pitch_deg, theta5_roll_deg)
 
     phi_user = deg2rad(phi_pitch_deg);
     phi_math = pi/2 - phi_user; 
@@ -16,7 +16,7 @@ function [q_Up, q_Down] = ikine_Mentor(Px, Py, Pz, phi_pitch_deg, theta5_roll_de
     c3 = (D2 - a2^2 - a3^2) / (2 * a2 * a3);
 
     if c3 < -1 || c3 > 1
-        error('Toa do nam ngoai tam voi!');
+        error('Toa do nam ngoai tam ');
     end
 
     s3_up = sqrt(1 - c3^2);
